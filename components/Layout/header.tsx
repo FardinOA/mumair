@@ -1,34 +1,9 @@
 import Link from "next/link";
 import Logo from "../logo";
 import Button from "../button";
+import { links } from "@/constant";
 
 const Header = () => {
-    const links = [
-        {
-            name: "Home",
-            url: "/",
-        },
-        {
-            name: "About Me",
-            url: "#",
-        },
-        {
-            name: "Services",
-            url: "#/",
-        },
-        {
-            name: "Projects",
-            url: "#",
-        },
-        {
-            name: "Testimonials",
-            url: "#",
-        },
-        {
-            name: "Contact",
-            url: "#",
-        },
-    ];
     return (
         <header className="bg-background pt-3 lg:pt-[61px] ">
             <div className="container flex justify-between items-center    ">

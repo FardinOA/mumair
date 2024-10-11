@@ -1,13 +1,18 @@
 import { Montserrat } from "next/font/google";
 import Link from "next/link";
+import { cn } from "./lib";
 const montserrat = Montserrat({
     subsets: ["latin"],
     weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
-const Logo = () => {
+const Logo = ({ className }: { className?: string }) => {
     return (
         <Link
-            className={`flex items-center gap-1 lg:gap-5 text-xl lg:text-5xl  text-text ${montserrat.className}`}
+            className={cn(
+                `flex items-center gap-1 lg:gap-5 text-xl lg:text-5xl  text-text `,
+                montserrat.className,
+                className
+            )}
             href={`/`}
         >
             <svg

@@ -1,5 +1,7 @@
 import About from "@/components/Homepage/about";
+import Contact from "@/components/Homepage/contact";
 import Hero from "@/components/Homepage/hero";
+import Projects from "@/components/Homepage/projects";
 import Services from "@/components/Homepage/services";
 
 export default function Home() {
@@ -8,8 +10,8 @@ export default function Home() {
             <Hero />
             <About />
             <Services />
-
-            <div className="h-dvh"></div>
+            <Projects />
+            <Contact />
         </main>
     );
 }

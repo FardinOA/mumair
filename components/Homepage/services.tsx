@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import SectionHeader from "../section-header";
 
 const Services = () => {
     const data = [
@@ -30,14 +31,12 @@ const Services = () => {
     ];
     return (
         <section className="container space-y-5 lg:space-y-10 ">
-            <div>
-                <h4 className="title text-center">Services</h4>
-                <p className="subtitle !text-center lg:max-w-[880px] mx-auto ">
-                    Lorem ipsum dolor sit amet consectetur. Tristique amet sed
+            <SectionHeader
+                title="Services"
+                subtitle=" Lorem ipsum dolor sit amet consectetur. Tristique amet sed
                     massa nibh lectus netus in. Aliquet donec morbi convallis
-                    pretium
-                </p>
-            </div>
+                    pretium"
+            />
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-8 ">
                 {data?.map((item, ind) => (
                     <div

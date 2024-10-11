@@ -8,14 +8,18 @@
         --background: hsl(0, 0%, 99.43%);
         --primary: hsl(26, 100%, 50.39%);
         --secondary: hsl(0, 0%, 97.25%);
+        --footer: hsl(0, 0%, 97.25%);
+        --footer-bottom: hsl(0, 0%, 33%);
     }
 
     @media (prefers-color-scheme: dark) {
         :root {
             --text: hsl(0, 0%, 100%);
             --background: hsl(0, 0%, 11.76%);
+            --footer: hsl(0, 0%, 11.76%);
             --primary: hsl(26, 100%, 50.39%);
             --secondary: hsl(0, 0%, 97.25%);
+            --footer-bottom: hsl(0, 0%, 7%);
         }
     }
 }
@@ -24,12 +28,13 @@
     letter-spacing: 3%;
 }
 
-a {
+a,
+button {
     @apply transition-all duration-500;
 }
 
 .title {
-    @apply text-text text-2xl lg:text-[65px] lg:leading-[97.5px] font-semibold;
+    @apply text-text text-2xl md:text-4xl md:leading-[60px] lg:text-[65px] lg:leading-[97.5px] font-semibold;
 }
 
 .subtitle {

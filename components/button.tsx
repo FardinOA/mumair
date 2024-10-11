@@ -2,7 +2,7 @@ import React from "react";
 import { cn } from "./lib";
 import { cva, type VariantProps } from "class-variance-authority";
 const buttonVariants = cva(
-    "  rounded-[5px] lg:text-[21px] lg:leading-[31.5px] lg:tracking-[3%] text-justify ",
+    "   rounded-[5px] lg:text-[21px] lg:leading-[31.5px] lg:tracking-[3%] text-justify text-nowrap ",
     {
         variants: {
             variant: {
