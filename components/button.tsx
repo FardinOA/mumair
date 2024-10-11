@@ -1,8 +1,9 @@
 import React from "react";
 import { cn } from "./lib";
 import { cva, type VariantProps } from "class-variance-authority";
+
 const buttonVariants = cva(
-    "   rounded-[5px] lg:text-[21px] lg:leading-[31.5px] lg:tracking-[3%] text-justify text-nowrap ",
+    " rounded-[5px] lg:text-[21px] lg:leading-[31.5px] lg:tracking-[3%] text-justify text-nowrap ",
     {
         variants: {
             variant: {
@@ -19,11 +20,13 @@ const buttonVariants = cva(
         },
     }
 );
+
 export interface ButtonProps
     extends React.ButtonHTMLAttributes<HTMLButtonElement>,
         VariantProps<typeof buttonVariants> {}
+
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
-    ({ children, className, variant, size, ...props }, ref) => {
+    ({ children, className, variant = "default", size, ...props }, ref) => {
         return (
             <button
                 ref={ref}
