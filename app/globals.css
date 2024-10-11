@@ -20,6 +20,10 @@
     } */
 }
 
+* {
+    letter-spacing: 3%;
+}
+
 a {
     @apply transition-all duration-500;
 }

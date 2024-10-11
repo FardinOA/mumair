@@ -6,7 +6,7 @@ const buttonVariants = cva(
     {
         variants: {
             variant: {
-                default: "bg-primary text-white hover:bg-primary/90",
+                default: "bg-primary text-white hover:bg-primary/90 ",
             },
             size: {
                 default: "py-[6px] lg:py-[10px] px-[18px] lg:px-[32px]",
