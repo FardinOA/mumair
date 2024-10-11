@@ -10,12 +10,16 @@
         --secondary: hsl(0, 0%, 97.25%);
     }
 
-    @media (prefers-color-scheme: dark) {
+    /* @media (prefers-color-scheme: dark) {
         :root {
             --text: hsl(0, 0%, 100%);
             --background: hsl(0, 0%, 11.76%);
             --primary: hsl(26, 100%, 50.39%);
             --secondary: hsl(0, 0%, 97.25%);
         }
-    }
+    } */
+}
+
+a {
+    @apply transition-all duration-500;
 }

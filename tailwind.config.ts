@@ -12,11 +12,16 @@ const config: Config = {
             colors: {
                 background: "var(--background)",
                 text: "var(--text)",
-                primary: "var(--primary)",
+                primary: {
+                    DEFAULT: "var(--primary)",
+                },
                 secondary: "var(--secondary)",
             },
             container: {
                 center: true,
+                padding: {
+                    DEFAULT: "1rem",
+                },
             },
         },
     },
