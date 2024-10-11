@@ -6,21 +6,21 @@ const Hero = () => {
         <section className=" container grid grid-cols-1 lg:grid-cols-12 items-center ">
             <div className="lg:col-span-7  space-y-[28px]">
                 <div className="  ">
-                    <p className="lg:text-2xl font-semibold text-text  ">
+                    <p className=" md:text-xl lg:text-2xl font-semibold text-text  ">
                         Hi I am
                     </p>
-                    <h1 className="text-primary text-lg font-semibold lg:text-[32px] lg:leading-[48px] ">
+                    <h1 className="text-primary text-lg md:text-2xl font-semibold lg:text-[32px] lg:leading-[48px] ">
                         Muhammad Umair
                     </h1>
-                    <h2 className="font-bold text-5xl lg:text-[100px] lg:leading-[100px] text-text ">
+                    <h2 className="font-bold text-5xl md:text-7xl lg:text-[100px] lg:leading-[100px] text-text ">
                         UI & UX <br className="max-lg:hidden" />{" "}
-                        <span className=" pl-[110px] lg:pl-[220px] ">
+                        <span className=" pl-[110px] md:pl-0 lg:pl-[220px] ">
                             Designer
                         </span>
                     </h2>
                 </div>
                 <div className="max-w-[698px] space-y-5">
-                    <p className="text-justify lg:text-[21px] lg:leading-[31.5px] text-text ">
+                    <p className="subtitle ">
                         Lorem ipsum dolor sit amet consectetur. Tristique amet
                         sed massa nibh lectus netus in. Aliquet donec morbi
                         convallis pretium. Turpis tempus pharetra
@@ -29,16 +29,16 @@ const Hero = () => {
                 </div>
             </div>
             <div className="lg:col-span-5    ">
-                <div className="size-fit space-y-5 ">
-                    <figure className="relative size-fit ">
+                <div className="lg:size-fit space-y-5 ">
+                    <figure className="relative">
                         <div className=" h-14 w-[200px] lg:w-[274px] lg:h-[83px] bg-[#FD6F0099]  absolute top-14 lg:top-20 left-1/2 -translate-x-1/2 "></div>
                         <Image
                             src={`/assets/hero.png`}
-                            width={1076}
-                            height={1247}
+                            width={538}
+                            height={617}
                             alt={`hero`}
                             sizes="100"
-                            className="object-contain lg:w-[538px] lg:h-[617px] "
+                            className="object-contain aspect-[538/617] lg:w-[538px] lg:h-[617px] mx-auto "
                         />
                     </figure>
                     <div className="flex justify-center items-center gap-4 lg:gap-5 size-fit mx-auto">

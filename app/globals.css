@@ -5,19 +5,19 @@
 @layer base {
     :root {
         --text: hsl(0, 0%, 0%);
-        --background: hsl(0, 0%, 98.43%);
+        --background: hsl(0, 0%, 99.43%);
         --primary: hsl(26, 100%, 50.39%);
         --secondary: hsl(0, 0%, 97.25%);
     }
 
-    /* @media (prefers-color-scheme: dark) {
+    @media (prefers-color-scheme: dark) {
         :root {
             --text: hsl(0, 0%, 100%);
             --background: hsl(0, 0%, 11.76%);
             --primary: hsl(26, 100%, 50.39%);
             --secondary: hsl(0, 0%, 97.25%);
         }
-    } */
+    }
 }
 
 * {
@@ -26,4 +26,12 @@
 
 a {
     @apply transition-all duration-500;
+}
+
+.title {
+    @apply text-text text-2xl lg:text-[65px] lg:leading-[97.5px] font-semibold;
+}
+
+.subtitle {
+    @apply text-justify lg:text-[21px] lg:leading-[31.5px] text-text;
 }

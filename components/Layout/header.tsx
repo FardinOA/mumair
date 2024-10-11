@@ -35,12 +35,12 @@ const Header = () => {
                 <Logo />
 
                 <nav className="flex items-center gap-3">
-                    <ul className="flex items-center gap-3 max-md:hidden ">
+                    <ul className="flex items-center gap-3 max-lg:hidden ">
                         {links.map((link) => (
                             <li key={link.name}>
                                 <Link
                                     href={link.url}
-                                    className="text-text hover:text-primary lg:text-[21px] lg:leading-[31.5px] lg:tracking-[3%] py-[10px] px-[14px] "
+                                    className="text-text hover:text-primary lg:text-[21px] lg:leading-[31.5px] lg:tracking-[3%] px-2 2xl:py-[10px] 2xl:px-[14px] "
                                 >
                                     {link.name}
                                 </Link>
