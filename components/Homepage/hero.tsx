@@ -39,6 +39,8 @@ const Hero = () => {
                             height={617}
                             alt={`hero`}
                             sizes="100"
+                            quality={100}
+                            priority
                             className="object-contain aspect-[538/617] lg:w-[538px] lg:h-[617px] mx-auto "
                         />
                     </figure>

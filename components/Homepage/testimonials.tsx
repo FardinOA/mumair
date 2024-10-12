@@ -117,6 +117,7 @@ const Testimonials = () => {
             <div className="flex justify-center gap-2 mt-6">
                 {data.map((_, index) => (
                     <button
+                        aria-label="slide toggle"
                         key={index}
                         onClick={() => {
                             setActiveIndex(index);
